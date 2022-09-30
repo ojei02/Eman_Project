@@ -1,0 +1,404 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font: 16px bold;
+    font-family: sans-serif;
+    
+
+}
+#header, #nav, .main, .footer{
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+#header{
+    top: 0px;
+}
+#nav{
+    display: none;
+}
+li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: hsl(270, 9%, 17%);
+    font-weight: 700;
+    font-size: 80%;
+    padding: 15px;
+    margin: 0px;
+}
+a:hover{
+    border: 2px solid hsl(270, 9%, 17%);
+    background-color: hsl(256, 26%, 20%)    ;
+    padding: 15px;
+    margin: 0px;
+    color: hsl(0, 0%, 98%);
+}
+.link ul{
+    text-align: center;
+}
+.h3{
+    border-bottom: 40px;
+    color: hsl(273, 4%, 51%);
+    margin: 15px;
+    padding: 10px;
+}
+.footer{
+    bottom: 0px;
+    background-color: hsl(0, 0%, 98%);
+    margin: 0px;
+    padding: 40px;
+    position: relative;
+    
+}
+.list{
+    text-align: left;
+}
+.hr-head{
+    display: none;
+}
+hr{
+    width: 50%;
+}
+
+/*=====IMAGE SECTION MOBILE VIEW=======*/
+.image-desktop{
+    display: none;
+}
+.image-mobile{
+    display: unset;
+}
+.img-desk{
+    display: none;
+}
+.img-mob{
+    display: unset;
+    position: absolute;
+    top: 300px;
+    right: 0px;
+}
+.img2-desk{
+    display: none;
+}
+.img2-mob{
+    display: unset;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.last2-desk{
+    display: none;
+}
+.last2-mob{
+    display: unset;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.footer-img-desk{
+    display: none;
+}
+.footer-img-mob{
+    display: unset;
+    object-fit: contain;
+    width: 400px;
+}
+.mob-foot-div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.logo{
+    width: 150px;
+    object-fit: contain;
+    
+}
+
+/*=====PARAGRAPH SECTION (mobile view)======*/
+.icon{
+    justify-content: space-between;
+    padding-top: 60px;
+    height: 90px;
+    line-height: 45px;
+    
+}
+.para4{
+    background-color: hsl(256, 26%, 20%); 
+    margin-top: 80px; margin-bottom: 80px;
+    padding-top: 40px; padding-left: 15px;
+    padding-bottom: 40px; padding-right: 15px;
+
+    color: hsl(0, 0%, 98%);
+    position: relative;
+    font-size: 17px;
+}
+.p4{
+    font-size: 150%;
+}
+.btn2{
+    margin-left: 30px; margin-right: 70px;
+}
+.btn2 a{
+    border: solid 1px hsl(0, 0%, 98%);
+    padding: 20px;
+    margin: 5px auto;
+    color: hsl(0, 0%, 98%);
+}
+.btn2 a:hover{
+    border: solid 2px hsl(273, 4%, 51%);
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+}
+.card{
+    margin: 70px;
+}
+.p1{
+    background-color: hsl(256, 26%, 20%); 
+    margin-top: 0px; margin-bottom: 80px;
+    padding-top: 40px; padding-left: 15px;
+    padding-bottom: 40px; padding-right: 15px;
+
+    color: hsl(0, 0%, 98%);
+    position: relative;
+    font-size: 17px;
+    top: -5px;
+}
+.btn1{
+    margin-top: 30px;
+}
+.btn1 a{
+    border: solid 1px hsl(0, 0%, 98%);
+    padding: 20px;
+    margin: 5px auto;
+    color: hsl(0, 0%, 98%);
+}
+.btn1 a:hover{
+    border: solid 2px hsl(273, 4%, 51%);
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+}
+.para1{
+    padding: 0px;
+    margin: 0px;
+}
+.icon-link a:hover{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) {
+    /*======LAYOUT SECTION (DESKTOP)========*/
+    body{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .container{
+        margin: 50px;
+        padding: 20px;
+    }
+    #header{
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav{
+        display: flex;
+    }
+    
+    #nav ul{
+        display: flex;
+        
+    }
+    li{
+        list-style-type: none;
+        padding: 10px;
+        margin: 5px;
+    }
+    a{
+        text-decoration: none;
+        color: hsl(273, 4%, 51%);
+    }
+    .hr-head2{
+        display: none;
+    }
+    .hr-head{
+        display: unset;
+        margin: 20px;
+    }
+    hr{
+        width: 20%;
+        float: left;
+        clear: right;
+        
+    }
+    .footer{
+        position: relative;
+    }
+       
+    /*======IMAGE SECTION======*/
+    .image-mobile{
+        display: none;
+    }
+    .image-desktop{
+        display: unset;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+
+    }
+    .img-desk{
+        display: unset;
+        position: absolute;
+        top: -50px;
+        right: -60px;
+        width: 300px;
+        object-fit: contain;
+    }
+    .img-mob{
+        display: none;
+    }
+    .img2-desk{
+        display: unset;
+        position: absolute;
+        bottom: -200px;
+        left: 0px;
+        width: 130px;
+        object-fit: contain;
+    }
+    .img2-mob{
+        display: none;
+    }
+    .last2-desk{
+        display: unset;
+    }
+    .last2-mob{
+        display: none;
+    }
+
+    .footer-img-desk{
+        display: unset;
+        width: 350px;
+    }
+    .footer-img-mob{
+        display: none;
+    }
+    .desk-foot-div{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        
+        object-fit: contain;
+    }
+
+    
+
+
+
+/*======PARAGRAPH SECTION(DESKTOP VIEW)==========*/
+    .list-con{
+    
+        text-align: left;
+        align-items: left;
+        margin: 20px;
+    }
+    .list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .link{
+        display: block;
+        text-align: left;
+        margin: 0px;
+    }
+    .link ul{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+
+    .para1{
+        position: relative;
+        background-color: hsl(256, 26%, 20%);
+        padding: 40px 60px;
+        margin-bottom: 150px;
+    }
+    .pa{
+        margin-right: 500px; margin-left: 70px; margin-top: 50px;
+        text-align: left;
+    }
+    .p1{
+        background-color: unset; 
+        margin-top: 0px; margin-bottom: 80px;
+        padding-top: 40px; padding-left: 15px;
+        padding-bottom: 40px; padding-right: 15px;
+    
+        color: hsl(0, 0%, 98%);
+        position: relative;
+        font-size: 17px;
+        top: -5px;
+    }
+    .para2{
+        padding: 80px;
+    }
+    .para3{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        margin: 0px;
+    }
+    .para2 h1{
+        text-align: left;
+        font-size: 250%;
+    }
+    .card{
+        margin: 20px;
+        text-align: left;
+    }
+    .para4{
+        position: relative;
+        align-items: center;
+        text-align: left;
+        padding-left:40px ;
+    }
+    .last{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .btn2{
+        position: absolute;
+        top:50px;
+        margin-left: 700px;
+        margin-right: 100px;
+        width: 120px;
+    } 
+    .hr2{
+        width: 100%;
+    }
+    *{
+        text-align: left;
+    }
+    
+}
